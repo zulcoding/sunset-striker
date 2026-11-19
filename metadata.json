@@ -1,0 +1,6 @@
+{
+  "name": "Sunset Striker",
+  "description": "Retro 3D pixel-art coastal combat flight game with chase, cockpit, and top-down cameras.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

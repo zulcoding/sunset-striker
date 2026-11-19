@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1b1826;
+    font-family: "Chakra Petch", system-ui, sans-serif;
+  }
+}
+
+.font-pixel {
+  font-family: "Silkscreen", "JetBrains Mono", monospace;
+}
+
+.font-mono-hud {
+  font-family: "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.pixel-canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.hud-text-stroke {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px rgba(18, 16, 28, 0.92);
+  text-shadow: 0 2px 0 rgba(18, 16, 28, 0.85);
+}
+
+.pixel-panel {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 224, 166, 0.16),
+    0 4px 0 rgba(12, 10, 20, 0.72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
